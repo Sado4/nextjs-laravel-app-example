@@ -24,8 +24,10 @@ COPY my.cnf /etc/my.cnf
 ## コンテナ起動(初回ビルド)
 
 ```sh
-docker-compose up -d --build # 初回
-docker-compose up -d # ２回目以降
+# 初回
+docker-compose up -d --build
+# ２回目以降
+docker-compose up -d 
 ```
 
 ## Laravelインストール
