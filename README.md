@@ -3,7 +3,7 @@
 ## 前提
 
 - M1Mac対応
-- Intel製チップMacの場合は`.docker/db/Dockerfile`を以下の通り修正
+- M1Macの場合は`.docker/db/Dockerfile`を以下の通り修正
 - Windowsでの動作確認は行っていない
 
 ```diff
