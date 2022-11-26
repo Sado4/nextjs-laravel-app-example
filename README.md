@@ -42,7 +42,7 @@ docker-compose exec api composer create-project laravel/laravel .
 
 ## Next.jsインストール
 
-- ? Would you like to use ESLint with this project? › No / Yes
+- 下記コマンドを実行した際に `? Would you like to use ESLint with this project? › No / Yes`　と聞かれる
   - ESLintを使用する場合は、Yesを選択する。
 
 ```sh
