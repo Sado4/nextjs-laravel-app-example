@@ -42,6 +42,9 @@ docker-compose exec api composer create-project laravel/laravel .
 
 ## Next.jsインストール
 
+- ? Would you like to use ESLint with this project? › No / Yes
+  - ESLintを使用する場合は、Yesを選択する。
+
 ```sh
 docker-compose exec front yarn create next-app  --typescript .
 
