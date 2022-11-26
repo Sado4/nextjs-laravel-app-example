@@ -7,18 +7,25 @@
 - Windowsでの動作確認は行っていない
 
 ```diff
-- FROM --platform=linux/x86_64 mysql:8.0
-+ FROM mysql:8.0
+- FROM mysql:8.0
++ FROM --platform=linux/x86_64 mysql:8.0
 
 ENV TZ=UTC
 
 COPY my.cnf /etc/my.cnf
 ```
 
-## コンテナ起動
+## 使用技術
+
+- frontend: TypeScript/React/Next.js
+- backend(api): PHP/Laravel
+- infra: Docker/Docker Compose
+
+## コンテナ起動(初回ビルド)
 
 ```sh
-docker-compose up -d --build
+docker-compose up -d --build # 初回
+docker-compose up -d # ２回目以降
 ```
 
 ## Laravelインストール
@@ -45,4 +52,3 @@ docker-compose exec front yarn dev
 `localhost:3000`にアクセスするとNext.jsのウェルカムページが表示される
 
 開発用サーバーの停止は`control + c`
-
